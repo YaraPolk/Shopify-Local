@@ -1157,6 +1157,17 @@
         }
       }
     },
+    "my_custom_section": {
+      "name": "My Custom Section ",
+      "settings": {
+        "my_custom_image": {
+          "label": "My custom Image"
+        },
+        "image_width": {
+          "label": "My custom Image Width"
+        }
+      }
+    },
     "image-banner": {
       "name": "Image banner",
       "settings": {
