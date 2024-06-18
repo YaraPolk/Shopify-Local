@@ -1,0 +1,12 @@
+.my-custom-section {
+    padding: 50px 120px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.my-custom-section .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
