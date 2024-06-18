@@ -1,17 +1,21 @@
 {{ 'my-custom-section.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  assign image_size = section.settings.image_width
+-%}
+
 <section class="my-custom-section" id="{{ section.id }}">
     <div class="image">
-        {{ section.settings.my_custom_image
-        | image_url: width: 3840
-        | image_tag:
-        width: section.settings.image_width }}
+      {{ section.settings.my_custom_image
+      | image_url: width: 3840
+      | image_tag:
+      width: image_size }}
     </div>
 </section>
 
 {% schema %}
  {
-   "name": "t:sections.my_custom_image.name",
+   "name": "t:sections.my_custom_section.name",
    "tag": "section",
    "class": "my-custom-section",
    "settings": [
@@ -29,6 +33,12 @@
        "unit": "%",
        "label": "t:sections.my-custom-section.settings.image_width.label",
        "default": 10
+     }
+   ],
+   "presets": [
+     {
+       "name": "MY Custom Section",
+       "category": "Custom"
      }
    ]
  }
