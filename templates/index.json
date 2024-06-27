@@ -80,7 +80,7 @@
       "type": "my-custom-section",
       "settings": {
         "my_custom_image": "shopify:\/\/shop_images\/Slice-1.jpg",
-        "image_width": 100
+        "image_width": 90
       }
     }
   },
