@@ -1,17 +1,1 @@
-.my-custom-section {
-    width: 100%;
-    max-width: 100%;
-}
-
-.my-custom-section .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .my-custom-section {
-        padding: 50px 100px;
-    }
-}
+.my-custom-section{width:100%;max-width:100%}@media screen and (min-width: 768px){.my-custom-section{padding:50px 100px}}.my-custom-section .image{display:flex;justify-content:center;align-items:center;width:100%}
