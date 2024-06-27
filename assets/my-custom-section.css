@@ -1,5 +1,4 @@
 .my-custom-section {
-    padding: 50px 120px;
     width: 100%;
     max-width: 100%;
 }
@@ -9,4 +8,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .my-custom-section {
+        padding: 50px 120px;
+    }
 }
