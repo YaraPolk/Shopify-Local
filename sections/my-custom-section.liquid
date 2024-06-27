@@ -1,4 +1,4 @@
-{{ '/css/my-custom-section.css' | asset_url | stylesheet_tag }}
+{{ 'my-custom-section.css' | asset_url | prepend: 'css' | stylesheet_tag }}
 
 {%- liquid
   assign image_size = section.settings.image_width | append: '%'
