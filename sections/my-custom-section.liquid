@@ -1,7 +1,7 @@
 {{ 'my-custom-section.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-  assign image_size = section.settings.image_width
+  assign image_size = section.settings.image_width | append: '%'
 -%}
 
 <section class="my-custom-section" id="{{ section.id }}">
